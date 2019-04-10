@@ -4,7 +4,7 @@
     <View>
       <Name>exampleA</Name>
       <ViewSelectedBy>
-        <TypeName>a</TypeName>
+        <TypeName>b</TypeName>
       </ViewSelectedBy>
       <!--GroupBy>
         <PropertyName>PSParentPath</PropertyName>
@@ -21,38 +21,39 @@
             <Width>3</Width>
             <Alignment>Right</Alignment>
           </TableColumnHeader>
-          <TableColumnHeader>
-            <Label>t</Label>
-            <Width>3</Width>
-            <Alignment>Right</Alignment>
-          </TableColumnHeader>
-          <TableColumnHeader>
-            <Label>j</Label>
-            <Width>3</Width>
-            <Alignment>Right</Alignment>
-          </TableColumnHeader>
         </TableHeaders>
         <TableRowEntries>
           <TableRowEntry>
             <Wrap />
             <TableColumnItems>
               <TableColumnItem>
-                <ScriptBlock>$_.b.s</ScriptBlock>
+                <ScriptBlock>$_.s</ScriptBlock>
               </TableColumnItem>
               <TableColumnItem>
-                <ScriptBlock>$_.b.i</ScriptBlock>
-              </TableColumnItem>
-              <TableColumnItem>
-                <ScriptBlock>$_.c.t</ScriptBlock>
-              </TableColumnItem>
-              <TableColumnItem>
-                <ScriptBlock>$_.c.j</ScriptBlock>
+                <ScriptBlock>$_.i</ScriptBlock>
               </TableColumnItem>
             </TableColumnItems>
           </TableRowEntry>
         </TableRowEntries>
       </TableControl>
     </View>
-
-  </ViewDefinitions>
+        <View>
+            <Name>c</Name>
+            <OutOfBand />
+            <ViewSelectedBy>
+                <TypeName>CCustom</TypeName>
+            </ViewSelectedBy>
+            <CustomControl>
+                <CustomEntries>
+                    <CustomEntry>
+                       <CustomItem>
+                            <ExpressionBinding>
+                                <ScriptBlock>$_.Render()</ScriptBlock>
+                            </ExpressionBinding>
+                        </CustomItem>
+                    </CustomEntry>
+                </CustomEntries>
+            </CustomControl>
+        </View>
+      </ViewDefinitions>
 </Configuration>

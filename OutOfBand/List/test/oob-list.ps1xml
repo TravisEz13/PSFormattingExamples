@@ -39,21 +39,24 @@
     </View>
         <View>
             <Name>c</Name>
-            <OutOfBand />
             <ViewSelectedBy>
-                <TypeName>c</TypeName>
+                <TypeName>CList</TypeName>
             </ViewSelectedBy>
-            <CustomControl>
-                <CustomEntries>
-                    <CustomEntry>
-                       <CustomItem>
-                            <ExpressionBinding>
-                                <ScriptBlock>$_.Render()</ScriptBlock>
-                            </ExpressionBinding>
-                        </CustomItem>
-                    </CustomEntry>
-                </CustomEntries>
-            </CustomControl>
-        </View-->
+            <OutOfBand />
+            <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                        <ListItems>
+                            <ListItem>
+                                <PropertyName>t</PropertyName>
+                            </ListItem>
+                            <ListItem>
+                                <PropertyName>j</PropertyName>
+                            </ListItem>
+                        </ListItems>
+                    </ListEntry>
+                </ListEntries>
+            </ListControl>
+        </View>
       </ViewDefinitions>
 </Configuration>

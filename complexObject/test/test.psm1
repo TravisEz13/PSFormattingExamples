@@ -1,6 +1,4 @@
-
-Update-FormatData -Path ./fi.ps1xml
-Class A
+Class AComplex
 {
 [B] $b;
 [C] $c;
@@ -29,7 +27,10 @@ $c = [c]@{
     j=3
 }
 
-Write-Output ([a]@{
-    b=$b
-    c=$c
-})
+
+function get-testobject {
+    Write-Output ([AComplex]@{
+        b=$b
+        c=$c
+    })
+}
