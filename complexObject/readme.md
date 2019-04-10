@@ -27,7 +27,18 @@ To test, run `Update-FormatData -Path ./fi.ps1xml` where `./fi.ps1xml` is the pa
 
 Then, just output your object.
 
+## Adding the format to you module
+
+When you have the format working add the following line to your PSD1 of your module
+
+```Powershell
+FormatsToProcess = @('fi.ps1xml')
+```
+
+See, https://docs.microsoft.com/en-us/powershell/developer/module/how-to-write-a-powershell-module-manifest
+
 ## Full example
 
 - [ps1xml](fi.ps1xml)
 - [example.ps1](example.ps1)
+
