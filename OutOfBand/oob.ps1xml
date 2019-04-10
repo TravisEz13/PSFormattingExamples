@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <ViewDefinitions>
+    <View>
+      <Name>exampleA</Name>
+      <ViewSelectedBy>
+        <TypeName>b</TypeName>
+      </ViewSelectedBy>
+      <!--GroupBy>
+        <PropertyName>PSParentPath</PropertyName>
+      </GroupBy -->
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>S</Label>
+            <Width>3</Width>
+            <Alignment>Left</Alignment>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>i</Label>
+            <Width>3</Width>
+            <Alignment>Right</Alignment>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <Wrap />
+            <TableColumnItems>
+              <TableColumnItem>
+                <ScriptBlock>$_.s</ScriptBlock>
+              </TableColumnItem>
+              <TableColumnItem>
+                <ScriptBlock>$_.i</ScriptBlock>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+        <View>
+            <Name>c</Name>
+            <ViewSelectedBy>
+                <TypeName>c</TypeName>
+            </ViewSelectedBy>
+            <OutOfBand />
+            <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                        <ListItems>
+                            <ListItem>
+                                <PropertyName>t</PropertyName>
+                            </ListItem>
+                            <ListItem>
+                                <PropertyName>j</PropertyName>
+                            </ListItem>
+                        </ListItems>
+                    </ListEntry>
+                </ListEntries>
+            </ListControl>
+        </View>
+        <!--View>
+            <Name>ScriptBlock</Name>
+            <OutOfBand />
+            <ViewSelectedBy>
+                <TypeName>System.Management.Automation.ScriptBlock</TypeName>
+            </ViewSelectedBy>
+            <CustomControl>
+                <CustomEntries>
+                    <CustomEntry>
+                       <CustomItem>
+                            <ExpressionBinding>
+                                <ScriptBlock>$_</ScriptBlock>
+                            </ExpressionBinding>
+                        </CustomItem>
+                    </CustomEntry>
+                </CustomEntries>
+            </CustomControl>
+        </View-->
+      </ViewDefinitions>
+</Configuration>

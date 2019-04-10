@@ -1,4 +1,4 @@
-# Formatting a complex object
+# Formatting a multiple objects using out of band
 
 ## Use a ps1xml to View
 
